@@ -41,10 +41,12 @@ const PasswordItem = props => {
   return (
     <li className="password-item-container">
       <div className="password-item-content-container">
-        <div
-          className={`password-item-domain-initial-container ${domainInitialBackgroundColor}`}
-        >
-          <p className="password-item-domain-initial">{domainNameInitial}</p>
+        <div className="password-item-domain-initial-container">
+          <p
+            className={`password-item-domain-initial  ${domainInitialBackgroundColor}`}
+          >
+            {domainNameInitial}
+          </p>
         </div>
 
         <div className="password-item-data-container">
