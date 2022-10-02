@@ -39,12 +39,12 @@ body {
 
 .add-new-password-bg-container {
   background-color: #5763a5;
-  padding: 2rem 1rem;
+  padding: 2rem 3rem;
   border-radius: 0.8rem;
   box-shadow: 0 0 0.5rem 0 #b6c3ca;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
   width: 98%;
@@ -116,6 +116,7 @@ body {
   background: inherit;
   border: none;
   outline: none;
+  width: 72%;
 }
 
 .form-submit-button {
@@ -401,13 +402,51 @@ body {
 
   .add-new-password-img {
     order: 1;
-    height: 100%;
-    width: 50%;
+    width: 33vw;
   }
 
   .add-new-password-form-input-container {
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    width: 50vw;
+  }
+
+  .form-input-header {
+    font-size: 1.5rem;
+    font-weight: 550;
+    margin-bottom: 1rem;
+  }
+
+  .form-input-container {
+    margin: 1rem;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .form-input-img-container {
+    margin: 0;
+    padding: 1.2rem;
     height: 100%;
-    width: 40%;
+    width: 10%;
+  }
+
+  .form-input-img {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .form-input {
+    padding: 1rem 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 550;
+    width: 90%;
+  }
+
+  .form-submit-button {
+    padding: 0.75rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1rem;
   }
 
   /* AddNewPassword Component - End */
