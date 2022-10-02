@@ -166,37 +166,37 @@ body {
 
 .password-header-count-display-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-grow: 1;
 }
 
 .password-header-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 550;
   margin-right: 0.5rem;
   color: #f8fafc;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 .password-count {
   font-size: 1.2rem;
-  padding: 0.15rem 1.2rem;
+  padding: 0.025rem 0.75rem;
   background: inherit;
   border: 0.05rem solid #f8fafc;
   border-radius: 1.2rem;
   color: #f8fafc;
-  margin-bottom: 0.8rem;
-  margin-right: 2rem;
+  /* margin-bottom: 0.8rem;
+  margin-right: 2rem; */
 }
 
 .password-search-container {
   display: flex;
   align-items: center;
-  padding: none;
+  padding: 0;
   border: 0.05rem solid #94a3b8;
   border-radius: 0.2rem;
-  width: 80%;
-  margin-bottom: 0;
+  width: 50%;
+  /* margin-bottom: 0; */
 }
 
 .password-search-icon-img-container {
@@ -204,8 +204,10 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  /* padding: 0.5rem 1rem; */
-  border: none;
+  padding: 0.5rem 1rem;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
   border-right: 0.05rem solid #94a3b8;
   background-color: #f8fafc;
   width: 20%;
@@ -213,13 +215,15 @@ body {
 }
 
 .password-search-icon-img {
-  height: 1.2rem;
-  width: 1.2rem;
+  height: 1.15rem;
+  width: 1.15rem;
+  border: none;
+  margin: 0;
 }
 
 .password-search-input {
   margin: 0;
-  /* padding: 0.6rem 1rem; */
+  padding: 0.5rem 1rem;
   border: none;
   color: #64748b;
   font-size: 1rem;
@@ -241,16 +245,16 @@ body {
 }
 
 .show-passwords-checkbox {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   background: #f8fafc;
   border: 0.05rem solid #64748b;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.2rem;
+  width: 1.2rem;
 }
 
 .show-passwords-label {
   color: #f8fafc;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 550;
 }
 
@@ -264,12 +268,12 @@ body {
 }
 
 .no-passwords-img {
-  width: 40%;
+  width: 100%;
 }
 
 .no-passwords-text {
   color: #f8fafc;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 550;
   text-align: center;
 }
@@ -409,6 +413,76 @@ body {
   /* AddNewPassword Component - End */
 
   /* PasswordCollectionInterface Component - Start */
+
+  .password-collection-interface-bg-container {
+    padding: 1.5rem 4rem;
+  }
+
+  .password-header-text {
+    font-size: 1.7rem;
+    margin-right: 0.75rem;
+    /* margin-bottom: 0; */
+  }
+
+  .password-count {
+    font-size: 1rem;
+    padding: 0.1rem 0.8rem;
+    border: 0.05rem solid #f8fafc;
+    border-radius: 1.2rem;
+    margin-top: 1.2rem;
+    /* margin-bottom: 0.8rem;
+    margin-right: 2rem; */
+  }
+
+  .password-search-container {
+    padding: 0;
+    border: 0.05rem solid #94a3b8;
+    border-radius: 0.2rem;
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .password-search-icon-img-container {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    width: 20%;
+    height: 100%;
+  }
+
+  .password-search-icon-img {
+    height: 1.3rem;
+    width: 1.3rem;
+    border: none;
+  }
+
+  .password-search-input {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 1.1rem;
+    width: 80%;
+    height: 100%;
+  }
+
+  .show-passwords-checkbox {
+    margin-right: 0.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .show-passwords-label {
+    font-size: 1rem;
+  }
+
+  .no-passwords-img {
+    width: 40%;
+  }
+
+  .no-passwords-text {
+    font-size: 1.7rem;
+    font-weight: 550;
+  }
+
   .password-list {
     flex-direction: row;
     flex-wrap: wrap;
