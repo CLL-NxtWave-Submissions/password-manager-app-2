@@ -363,10 +363,12 @@ body {
   align-items: flex-start;
   height: 100%;
   color: #f8fafc;
+  width: 60%;
 }
 
 .domain-name {
   font-size: 1.2rem;
+  margin-bottom: 0;
 }
 
 .username,
@@ -378,6 +380,11 @@ body {
 .username,
 .password-text {
   font-weight: 550;
+}
+
+.password-text {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .password-stars-img {
@@ -538,7 +545,7 @@ body {
 
   /* PasswordItem Component - Start */
   .password-item-container {
-    width: 25vw;
+    width: 30%;
     padding: 0 0.5rem 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
@@ -546,13 +553,14 @@ body {
 
   .password-item-domain-initial-container {
     margin-right: 0.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .password-item-domain-initial {
     font-size: 2rem;
     font-weight: 550;
-    border-radius: 49%;
-    padding: 0.75rem 1.25rem;
+    padding: 1rem 1.7rem;
   }
 
   .domain-name {
