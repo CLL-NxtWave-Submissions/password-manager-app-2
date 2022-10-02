@@ -1,0 +1,423 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* PasswordManager Component - Start */
+
+.password-manager-bg-container {
+  background-image: linear-gradient(to bottom, #9ba9eb, #c3caea);
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+}
+
+.brand-image {
+  height: 3rem;
+  width: 9rem;
+  align-self: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+/* PasswordManager Component - End */
+
+/* AddNewPassword Component - Start */
+
+.add-new-password-bg-container {
+  background-color: #5763a5;
+  padding: 2rem 1rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 0.5rem 0 #b6c3ca;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 98%;
+}
+
+.add-new-password-img {
+  height: 40%;
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+.add-new-password-form-input-container {
+  background-color: #454f84;
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-input-header {
+  color: #f8fafc;
+  font-size: 1.5rem;
+  font-weight: 550;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+
+.form-input-container {
+  border-radius: 0.4rem;
+  border: 0.05rem solid #94a3b8;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  margin-left: 0;
+  width: 100%;
+  align-self: flex-start;
+}
+
+.form-input-img-container {
+  margin: 0;
+  padding: 1.2rem;
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+  border: none;
+  border-right: 0.05rem solid #94a3b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 18%;
+}
+
+.form-input-img {
+  height: 1.5rem;
+  width: 1.5rem;
+  background: inherit;
+}
+
+.form-input {
+  color: #94a3b8;
+  padding: 1rem 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 550;
+  background: inherit;
+  border: none;
+  outline: none;
+}
+
+.form-submit-button {
+  border-radius: 0.2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #0b69ff;
+  padding: 0.75rem 2.5rem;
+  color: #ffffff;
+  align-self: flex-end;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* AddNewPassword Component - End */
+
+/* PasswordCollectionInterface Component - Start */
+
+.password-collection-interface-bg-container {
+  background-color: #5763a5;
+  padding: 1.5rem 1rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 0.5rem 0 #b6c3ca;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: 'Roboto';
+  width: 98%;
+}
+
+.password-collection-interface-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.password-header-count-display-search-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.password-header-count-display-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.password-header-text {
+  font-size: 1rem;
+  font-weight: 550;
+  margin-right: 0.5rem;
+  color: #f8fafc;
+  margin-bottom: 0;
+}
+
+.password-count {
+  font-size: 1.2rem;
+  padding: 0.15rem 1.2rem;
+  background: inherit;
+  border: 0.05rem solid #f8fafc;
+  border-radius: 1.2rem;
+  color: #f8fafc;
+  margin-bottom: 0.8rem;
+  margin-right: 2rem;
+}
+
+.password-search-container {
+  display: flex;
+  align-items: center;
+  padding: none;
+  border: 0.05rem solid #94a3b8;
+  border-radius: 0.2rem;
+  width: 80%;
+  margin-bottom: 0;
+}
+
+.password-search-icon-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  /* padding: 0.5rem 1rem; */
+  border: none;
+  border-right: 0.05rem solid #94a3b8;
+  background-color: #f8fafc;
+  width: 20%;
+  height: 100%;
+}
+
+.password-search-icon-img {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.password-search-input {
+  margin: 0;
+  /* padding: 0.6rem 1rem; */
+  border: none;
+  color: #64748b;
+  font-size: 1rem;
+  width: 80%;
+  height: 100%;
+}
+
+.horizontal-separator {
+  width: 100%;
+  border: none;
+  border-top: 0.1rem solid #c3caea;
+  margin-bottom: 1rem;
+}
+
+.show-passwords-action-container {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.show-passwords-checkbox {
+  margin-right: 1rem;
+  background: #f8fafc;
+  border: 0.05rem solid #64748b;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.show-passwords-label {
+  color: #f8fafc;
+  font-size: 1rem;
+  font-weight: 550;
+}
+
+.no-passwords-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+}
+
+.no-passwords-img {
+  width: 40%;
+}
+
+.no-passwords-text {
+  color: #f8fafc;
+  font-size: 2rem;
+  font-weight: 550;
+  text-align: center;
+}
+
+.password-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* PasswordCollectionInterface Component - End */
+
+/* PasswordItem Component - Start */
+
+.password-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  border: 0.05rem solid #c3caea;
+  border-radius: 0.2rem;
+  background: inherit;
+  font-family: 'Roboto';
+}
+
+.password-item-content-container {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.password-item-domain-initial-container {
+  border-radius: 49%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-right: 1.2rem;
+}
+
+.password-item-domain-initial {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 550;
+  background: inherit;
+}
+
+.domain-initial-background-violet {
+  background-color: #7683cb;
+}
+
+.domain-initial-background-gold {
+  background-color: #f59e0b;
+}
+
+.domain-initial-background-green {
+  background-color: #10b981;
+}
+
+.domain-initial-background-orange {
+  background-color: #f97316;
+}
+
+.domain-initial-background-jade {
+  background-color: #14b8a6;
+}
+
+.domain-initial-background-red {
+  background-color: #b91c1c;
+}
+
+.domain-initial-background-blue {
+  background-color: #0ea5e9;
+}
+
+.password-item-data-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.domain-name {
+  font-size: 1.2rem;
+}
+
+.username,
+.password-text {
+  font-size: 0.9rem;
+}
+
+.domain-name,
+.username,
+.password-text {
+  font-weight: 550;
+}
+
+.password-stars-img {
+  width: 100%;
+}
+
+.password-item-delete-button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: inherit;
+}
+
+.password-item-delete-button-img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* PasswordItem Component - End */
+
+@media (min-width: 768px) {
+  /* AddNewPassword Component - Start */
+  .add-new-password-bg-container {
+    flex-direction: row;
+  }
+
+  .add-new-password-img {
+    order: 1;
+    height: 100%;
+    width: 50%;
+  }
+
+  .add-new-password-form-input-container {
+    height: 100%;
+    width: 40%;
+  }
+
+  /* AddNewPassword Component - End */
+
+  /* PasswordCollectionInterface Component - Start */
+  .password-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  /* PasswordCollectionInterface Component - End */
+
+  /* PasswordItem Component - Start */
+  .password-item-container {
+    width: 25%;
+  }
+  /* PasswordItem Component - End */
+}
