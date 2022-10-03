@@ -39,7 +39,7 @@ body {
 
 .add-new-password-bg-container {
   background-color: #5763a5;
-  padding: 2rem 3rem;
+  padding: 2rem 1rem;
   border-radius: 0.8rem;
   box-shadow: 0 0 0.5rem 0 #b6c3ca;
   display: flex;
