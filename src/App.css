@@ -24,6 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Roboto';
+  min-width: 450px;
 }
 
 .brand-image {
@@ -180,14 +181,12 @@ body {
 }
 
 .password-count {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 0.025rem 0.75rem;
   background: inherit;
   border: 0.05rem solid #f8fafc;
   border-radius: 1.2rem;
   color: #f8fafc;
-  /* margin-bottom: 0.8rem;
-  margin-right: 2rem; */
 }
 
 .password-search-container {
@@ -197,7 +196,6 @@ body {
   border: 0.05rem solid #94a3b8;
   border-radius: 0.2rem;
   width: 50%;
-  /* margin-bottom: 0; */
 }
 
 .password-search-icon-img-container {
@@ -285,6 +283,8 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
 /* PasswordCollectionInterface Component - End */
@@ -315,17 +315,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  margin-right: 1.2rem;
-  /* margin-right: 0.25rem; */
+  padding: 0.5rem;
+  margin-right: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .password-item-domain-initial {
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 550;
   border-radius: 49%;
   padding: 0.5rem 1rem;
+  margin: 0;
 }
 
 .domain-initial-background-violet {
@@ -364,6 +366,7 @@ body {
   height: 100%;
   color: #f8fafc;
   width: 60%;
+  margin-right: 1rem;
 }
 
 .domain-name {
@@ -540,12 +543,109 @@ body {
   .password-list {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    /* width: 105%; */
   }
   /* PasswordCollectionInterface Component - End */
 
   /* PasswordItem Component - Start */
   .password-item-container {
-    width: 30%;
+    width: 47.5%;
+    padding: 0 0.5rem 1rem;
+    /* margin-right: 1rem; */
+    margin-bottom: 1rem;
+  }
+
+  .password-item-domain-initial-container {
+    margin-right: 0.1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .password-item-domain-initial {
+    font-size: 1.5rem;
+    font-weight: 550;
+    padding: 0.75rem 1.1rem;
+  }
+  /* PasswordItem Component - End */
+}
+
+@media (min-width: 850px) {
+  /* PasswordCollectionInterface Component - Start */
+  .password-list {
+    width: 105%;
+  }
+  /* PasswordCollectionInterface Component - End */
+
+  /* PasswordItem Component - Start */
+  .password-item-container {
+    width: 30.5%;
+    padding: 0 0.1rem 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .password-item-domain-initial-container {
+    margin-right: 0.1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .password-item-domain-initial {
+    font-size: 1.5rem;
+    font-weight: 550;
+    padding: 0.5rem 1rem;
+  }
+
+  .password-item-data-container {
+    margin-right: 0.5rem;
+  }
+
+  .domain-name {
+    font-size: 1rem;
+  }
+
+  .username,
+  .password-text {
+    font-size: 0.8rem;
+  }
+
+  .domain-name,
+  .username,
+  .password-text {
+    font-weight: 550;
+  }
+
+  .password-stars-img {
+    width: 100%;
+  }
+
+  .password-item-delete-button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: inherit;
+  }
+
+  .password-item-delete-button-img {
+    height: 1.4rem;
+    width: 1.4rem;
+  }
+  /* PasswordItem Component - End */
+}
+
+@media (min-width: 1100px) {
+  /* PasswordCollectionInterface Component - Start */
+  .password-list {
+    width: 105%;
+  }
+  /* PasswordCollectionInterface Component - End */
+
+  /* PasswordItem Component - Start */
+  .password-item-container {
+    width: 31%;
     padding: 0 0.5rem 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
